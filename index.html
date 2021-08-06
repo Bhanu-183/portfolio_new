@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- AOS animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- TYped text animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Bhanu Krishna Prasad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+            <div class="nav-color container">
+                <a class="navbar-brand" href="#">Bhanu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" style="margin-left:25rem;" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item" onclick="navchange(event,'home1')">
+                            <a class="nav-link active" id="home1" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'about1')">
+                            <a class="nav-link" id="about1" href="#about">About</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'resume1')">
+                            <a class="nav-link" id="resume1" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'services1')">
+                            <a class="nav-link" id="services1" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'projects1')">
+                            <a class="nav-link" id="projects1" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item" onclick="navchange(event,'contact1')">
+                            <a class="nav-link" id="contact1" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row heading-container">
+            <div class="col">
+            </div>
+            <div class="heading">
+                <h5 class="violet" style="font-weight:bold">HEY ! &nbsp; I AM</h5>
+                <h1 class="display-4" style="font-weight:bolder">Bhanu Krishna Prasad</h1>
+                <span class="text-slider-items" style="display: none;">
+                    Web Developer. Data Analyst. Web Designer. Software Developer
+                </span>
+                <span class="h2">I'm a </span><u class="violet text-slider h2"></u>
+            </div>
+            <script>
+                if ($(".text-slider").length == 1) {
+                    var typed_strings = $(".text-slider-items").text();
+                    var typed = new Typed(".text-slider", {
+                        strings: typed_strings.split(". "),
+                        typeSpeed: 80,
+                        loop: true,
+                        backDelay: 800,
+                        backSpeed: 60,
+                    });
+                }
+            </script>
+            <div class="col" style="background-color: white;"></div>
+
+        </div>
+
+    </div>
+
+</body>
+<script>
+</script>
+
+</html>

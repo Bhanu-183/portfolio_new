@@ -1,0 +1,55 @@
+:root
+{
+    --violet:#3e64ff;
+
+}
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body,html
+{
+    height: 100%;
+    margin: 0;
+}
+
+.violet
+{
+    color: var(--violet)
+}
+.col
+{
+    height: 100%;
+    width: 100%;
+    background-color: #ecf0fe
+}
+
+.heading-container
+{
+    height: 100%;
+    width: 100%;
+}
+
+.heading
+{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    z-index: 50;
+    top:35%
+}
+
+.nav-item
+{
+    margin-right: 2rem;
+    z-index: 50;
+}
+
+.nav-item:hover,.active
+{
+    transition: all 0.5s;
+    border-bottom: 3px solid var(--violet);
+}
