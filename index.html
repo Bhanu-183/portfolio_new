@@ -122,7 +122,7 @@
                     as me.
                 </p>
 
-                <table class="table table-hover">
+                <table class="table table-hover" style=" display: block;overflow-x: auto;white-space: nowrap;">
                     <tbody>
 
                         <tr>
@@ -152,10 +152,12 @@
     </div>
 
     <div class="container" style="margin-top: 5rem;" id="resume">
+        <h1 class="display-4 text-center mb-3 underline" data-aos="fade-up" style="font-weight:bold">Resume
+        </h1>
         <div class="row">
             <div class="col-md-3" data-aos="fade-right">
 
-                <ul style="list-style-type:none;" class="side-nav">
+                <ul style="list-style-type:none;" class="side-nav mt-5">
                     <li class="mt-3 activated side-link" id="education1" onclick="sidenav(event,'education1')">
                         <a href="#education"><b>Education</b></a>
                     </li>
@@ -443,7 +445,7 @@
     <div class="container mt-5" id="projects">
         <h1 class="display-4 text-center underline" data-aos="fade-up" style="font-weight:bold">Projects</h1>
         <div class="row mt-5">
-            <div class="col-md-4 test">
+            <div class="col-md-4 test mt-4">
                 <div>
                     <h2>Advice Byte</h2>
                     <h6>A web application developed using LAMP stack.This application is used to create a start-up
@@ -459,7 +461,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 test">
+            <div class="col-md-4 test mt-4">
                 <div>
                     <h2>Data Analysis</h2>
                     <h6>I tried to analysis the income of adults and change in trends across countries and race</h6>
@@ -473,7 +475,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 test">
+            <div class="col-md-4 test mt-4">
                 <div>
                     <h2>Banking system</h2>
                     <h6>I have developed a basic banking system using LAMP stack as part of my internship</h6>
@@ -491,7 +493,7 @@
 
 
 
-        <div class="row mt-5">
+        <div class="row mt-4">
             <div class="col-md-4 test">
                 <div>
                     <h2>PaisaTips</h2>
@@ -508,7 +510,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 test">
+            <div class="col-md-4 test mt-4">
                 <div>
                     <h2>Web Development</h2>
                     <h6>Here is the collection of static pages I have developed using HTML,CSS,Js and bootstrap</h6>
@@ -526,6 +528,88 @@
         </div>
     </div>
 
+
+    <div class="container mt-5" id="contact">
+        <h1 class="display-4 text-center underline" data-aos="fade-up" style="font-weight:bold">Contact Me</h1>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h3>CONNECT WITH US</h3>
+                    <p>
+                        Phone:+91-9347619384
+                    </p>
+                    <p>
+                        Email :bhanukrishna2019@iiitkottayam.ac.in
+                    </p>
+                    <p>
+                        Address:Indian Institute Of Information Technology Kottayam, Kerala
+                    </p>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3932.1289138042016!2d76.65001168056875!3d9.75514643173844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07ce23bc170053%3A0x8757971e61eb21dd!2sIndian%20Institute%20of%20Information%20Technology%20(IIIT)%20Kottayam!5e0!3m2!1sen!2sin!4v1627813584623!5m2!1sen!2sin"
+                        height="60%" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+                <div class="col-md-6 contact">
+                    <form action="mail.php" method="post" autocomplete="off">
+                        <input type="text" class="form-control mt-3" placeholder="YOUR NAME" name="name">
+                        <input type="eamil" class="form-control mt-4" placeholder="YOUR NAME" name="email">
+                        <textarea name="message" class="form-control mt-4" placeholder="Your Message" cols="57"
+                            rows="10"></textarea>
+                        <button class="btn btn-block btn-dark mt-4" href="./index.html">FIRE ME A MAIL</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small blue light pt-4" style="background-color: #3e64ff;">
+        <div class="container text-center text-md-left" style="color:white">
+
+            <div class="row">
+
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <h1 class="text-uppercase underline"><u>About</u></h1>
+                    <h6>A motivated individual with in-depth knowledge of languages and development tools.
+                        Aim to work in a dynamic environment, to get the best out of my skills which can be productive
+                        for
+                        the company as well
+                        as me.</h6>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+                <div class="col-md-3 mb-md-0 mb-3"></div>
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <h5 class="text-uppercase"><u>Quick Links</u></h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#home" class="footer-links">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="footer-links">About</a>
+                        </li>
+                        <li>
+                            <a href="#resume" class="footer-links">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#services" class="footer-links">Services</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="footer-links">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer-links">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color:white">© 2021 Bhanu Krishna Prasad
+        </div>
+
+    </footer>
 </body>
 <script>
     AOS.init({
