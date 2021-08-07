@@ -2,15 +2,16 @@
 if (isset($_POST['submit'])) {
     $to = "bhanukrishnaprasad3333@gmail.com";
     $from = $_POST['email'];
-    $subject = "Mail From Portfolio page";
-    $message = "\nMessage : " . $subject;
+    $name = $_POST['name'];
+    $subject = "Portfolio Response";
+    $message = $name . "\nSubject : " . $subject . " \nMessege:" . "\n" . $_POST['message'];
     $headers = "From:" . $from;
-    "From:" . $to;
-    $mail_status =  mail($to, $subject, $message, $headers);
-    if ($mail_status) {
+
+    mail($to, $subject, $message, $headers);
+
 ?>
-        <script>
-            location.replace("./index.html");
-        </script>
-<?php }
-}
+    <script>
+        alert("Your message has been sent");
+        location.replace("./index.html");
+    </script>
+<?php } ?>
