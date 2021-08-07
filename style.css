@@ -17,7 +17,7 @@ body,html
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 a,a:hover
 {
@@ -43,11 +43,9 @@ a,a:hover
 
 .heading
 {
-    position:absolute;
     width:100%;
-    text-align: center;
     z-index: 50;
-    top:35%
+    margin-top: 18rem;
 }
 
 
@@ -133,17 +131,37 @@ a
 .activated a::after
 {
     position: absolute;
-    top: 1.6rem;
+    margin-top: 10px;
     left: 14%;
     width: 25px;
     height: 3px;
-border-radius: 2px;
+    border-radius: 2px;
     content: '';
     background-color: var(--violet);
 }
 
+.arrow
+{
+    position:absolute;
+    margin-top: 50px;
+    margin-left: 0rem;
+}
 
 
+.progress-bar
+{
+    background-color:var(--violet);
+}
+
+.fa-arrow-right
+{
+    font-size:20px;
+    font-weight: 100;
+    padding: 15px;
+    color:white;
+    border-radius: 50%;
+    background-color: var(--violet);
+}
 @media only screen and (min-width:1024px) {
  .navbar-nav
 {
@@ -161,5 +179,14 @@ border-radius: 2px;
     .navbar-collapse a
     {
         color:white;
+    }
+
+    .heading
+    {
+        margin-top: -30rem;
+    }
+    .arrow
+    {
+        margin-left:40%;
     }
 }
