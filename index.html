@@ -538,7 +538,7 @@
         <h1 class="display-4 text-center underline" data-aos="fade-up" style="font-weight:bold">Contact Me</h1>
         <div class="container">
             <div class="row mt-5">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-4">
                     <h3>CONNECT WITH ME</h3>
                     <p>
                         Phone:+91-9347619384
@@ -555,7 +555,8 @@
                         height="60%" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
                 </div>
-                <div class="col-md-6 contact">
+                <div class="col-md-6 mt-5 contact">
+                    <h2 class="mt-5">DROP A MESSAGE</h2>
                     <form action="mail.php" method="post" autocomplete="off">
                         <input type="text" class="form-control mt-3" placeholder="YOUR NAME" name="name">
                         <input type="eamil" class="form-control mt-4" placeholder="YOUR NAME" name="email">
@@ -574,8 +575,9 @@
 
                 <div class="col-md-6 mt-md-0 mt-3">
 
-                    <h1 class="text-uppercase underline"><u>About</u></h1>
-                    <h6>A motivated individual with in-depth knowledge of languages and development tools.
+                    <h1 class="text-uppercase underline"><u style="color:white">About</u></h1>
+                    <h6 style="color:white">A motivated individual with in-depth knowledge of languages and development
+                        tools.
                         Aim to work in a dynamic environment, to get the best out of my skills which can be productive
                         for
                         the company as well
@@ -594,7 +596,7 @@
                 <div class="col-md-3 mb-md-0 mb-3"></div>
                 <div class="col-md-3 mb-md-0 mb-3">
 
-                    <h5 class="text-uppercase"><u>Quick Links</u></h5>
+                    <h5 class="text-uppercase"><u style="color:white">Quick Links</u></h5>
 
                     <ul class="list-unstyled">
                         <li>
@@ -625,6 +627,10 @@
     </footer>
 </body>
 <script>
+    $('.navbar-collapse a').click(function () {
+        $(".navbar-collapse").collapse('hide');
+    });
+
     AOS.init({
         duration: 1600,
     });
