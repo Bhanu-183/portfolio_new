@@ -22,7 +22,8 @@ body,html
 }
 a,a:hover
 {
-    text-decoration:none
+    text-decoration:none;
+    cursor: pointer;
 }
 .violet
 {
@@ -130,6 +131,10 @@ a
     transition:all 0.5s;
 }
 
+.activated b
+{
+    color:var(--violet);
+}
 .activated a::after
 {
     position: absolute;
@@ -206,6 +211,10 @@ a
     width: 9rem;
 }
 
+b:hover
+{
+    color: var(--violet);
+}
 
 
 .overlay {
