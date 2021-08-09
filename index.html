@@ -17,7 +17,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- AOS animation  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -161,32 +160,29 @@
         </h1>
         <div class="row">
             <div class="col-md-3" data-aos="fade-right">
-
                 <ul style="list-style-type:none;" class="side-nav mt-5">
-                    <li class="mt-3 activated side-link" id="education1" onmouseover="sidenav(event,'education1')"
-                        onclick="sidenav(event,'education1')">
+                    <li class="mt-3 activated side-link" id="education1"
+                        onclick="sidenavclick(event,'education1','education')">
                         <b> <a href="#education">Education</a></b>
                     </li>
-                    <li class="mt-3 side-link" id="skills1" onclick="sidenav(event,'skills1')" onmouseover="
-                        sidenav(event,'skills1')">
+                    <li class="mt-3 side-link" id="skills1" onclick="sidenavclick(event,'skills1','skills')">
                         <b> <a href="#skills">Skills</a></b>
                     </li>
 
-                    <li class="mt-3 side-link" id="experience1" onclick="sidenav(event,'experience1')"
-                        onmouseover="sidenav(event,'experience1')">
+                    <li class="mt-3 side-link" id="experience1"
+                        onclick="sidenavclick(event,'experience1','experience')">
                         <b> <a href="#experience">Experience</a></b>
 
                     </li>
 
-                    <li class="mt-3 side-link" id="extras1" onclick="sidenav(event,'extras1')"
-                        onmouseover="sidenav(event,'extras1')">
+                    <li class="mt-3 side-link" id="extras1" onclick="sidenavclick(event,'extras1','extras')">
                         <b> <a href="#extras">Extras
                             </a></b>
                     </li>
                 </ul>
 
             </div>
-            <div class="col-md-9 mt-3" id="education">
+            <div class="col-md-9 mt-3 resume-blocks" id="education" style="display:block">
                 <div class="conainer">
                     <div class="row">
                         <h2 class="violet" style="font-weight:bold"><u>Education</u></h2>
@@ -231,195 +227,189 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
 
-                <div class="row mt-5" id="skills">
-                    <div class="col-md-12 mt-4">
-                        <div class="conainer">
-                            <div class="row">
-                                <h2 class="violet" style="font-weight:bold"><u>Skills</u></h2>
+
+            <div class="col-md-9 resume-blocks mt-4" id="skills">
+                <div class="conainer">
+                    <div class="row">
+                        <h2 class="violet" style="font-weight:bold"><u>Skills</u></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mt-4">
+                        <h5>HTML</h5>
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" style="width: 80%; border-radius: 8px"
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                80%
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 mt-4">
-                                <h5>HTML</h5>
-                                <div class="progress">
-                                    <div class="progress-bar " role="progressbar" style="width: 80%; border-radius: 8px"
-                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                        80%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>CSS</h5>
-                                <div class="progress">
-                                    <div class="progress-bar " role="progressbar" style="width: 75%; border-radius: 8px"
-                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        75%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>JS</h5>
-                                <div class="progress">
-                                    <div class="progress-bar " role="progressbar" style="width: 50%; border-radius: 8px"
-                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                        50%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>MERN Stack</h5>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 60%; border-radius: 8px"
-                                        aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                        60%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>PhP</h5>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%; border-radius: 8px"
-                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        75%
-                                    </div>
-                                </div>
+                        <br />
+                        <h5>CSS</h5>
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" style="width: 75%; border-radius: 8px"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                75%
                             </div>
-                            <div class="col-md-6 mt-2">
-                                <h5>Python & Data Analysis</h5>
-                                <div class="progress">
-                                    <div class="progress-bar  " role="progressbar"
-                                        style="width: 60%; border-radius: 8px" aria-valuenow="70" aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        60%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>Django</h5>
-                                <div class="progress">
-                                    <div class="progress-bar  " role="progressbar"
-                                        style="width: 70%; border-radius: 8px" aria-valuenow="50" aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        70%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>Java</h5>
-                                <div class="progress">
-                                    <div class="progress-bar  " role="progressbar"
-                                        style="width: 60%; border-radius: 8px" aria-valuenow="60" aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        60%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>Database Management System</h5>
-                                <div class="progress">
-                                    <div class="progress-bar  " role="progressbar"
-                                        style="width: 75%; border-radius: 8px" aria-valuenow="75" aria-valuemin="0"
-                                        aria-valuemax="100">
-                                        75%
-                                    </div>
-                                </div>
-                                <br />
-                                <h5>C language and Data structures</h5>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%; border-radius: 8px"
-                                        aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                                        70%
-                                    </div>
-                                </div>
+                        </div>
+                        <br />
+                        <h5>JS</h5>
+                        <div class="progress">
+                            <div class="progress-bar " role="progressbar" style="width: 60%; border-radius: 8px"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                60%
+                            </div>
+                        </div>
+                        <br />
+                        <h5>MERN Stack</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 40%; border-radius: 8px"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                40%
+                            </div>
+                        </div>
+                        <br />
+                        <h5>PHP</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 75%; border-radius: 8px"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                75%
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row mt-5" id="experience">
-                    <div class="col-md-12 mt-4">
-                        <div class="conainer">
-                            <div class="row">
-                                <h2 class="violet" style="font-weight:bold"><u>Experience</u></h2>
+                    <div class="col-md-6 mt-4">
+                        <h5>Python & Data Analysis</h5>
+                        <div class="progress">
+                            <div class="progress-bar  " role="progressbar" style="width: 60%; border-radius: 8px"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                60%
                             </div>
                         </div>
-
-                        <div class="container" data-aos="fade-left">
-                            <div class="row">
-                                <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
-                                <div class="col-md-11">
-                                    <h6 class="violet mt-3" style="font-weight:bold">May-August
-                                        2019<span>(Present)</span></h6>
-                                    <h3 class="mt-1" style="font-weight:bold">
-                                        Web Development Intern
-                                    </h3>
-                                    <h4 class="mt-2">ABC Infomedia Private Limited</h4>
-                                    <h5 class="mt-2">Developed dynamic web applications using LAMP stack</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="container mt-5" data-aos="fade-left">
-                            <div class="row">
-                                <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
-                                <div class="col-md-11">
-                                    <h6 class="violet mt-3" style="font-weight:bold">February-March 2019</h6>
-                                    <h3 class="mt-1" style="font-weight:bold">
-                                        Web Development Intern
-                                    </h3>
-                                    <h4 class="mt-2">The Sparks Foundation</h4>
-                                    <h5 class="mt-2">Developed a basic banking application using LAMP stack</h5>
-                                </div>
+                        <br />
+                        <h5>Django</h5>
+                        <div class="progress">
+                            <div class="progress-bar  " role="progressbar" style="width: 70%; border-radius: 8px"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                70%
                             </div>
                         </div>
-                    </div>
-                </div>
-
-
-
-                <div class="row mt-5" id="extras">
-                    <div class="col-md-12 mt-4">
-                        <div class="conainer">
-                            <div class="row">
-                                <h2 class="violet" style="font-weight:bold"><u>Extras</u></h2>
+                        <br />
+                        <h5>Java</h5>
+                        <div class="progress">
+                            <div class="progress-bar  " role="progressbar" style="width: 60%; border-radius: 8px"
+                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                60%
                             </div>
                         </div>
-                        <div class="container" data-aos="fade-left">
-                            <div class="row">
-                                <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
-                                <div class="col-md-11">
-                                    <h6 class="violet mt-3" style="font-weight:bold">2021-Present</h6>
-                                    <h3 class="mt-1" style="font-weight:bold">
-                                        Trendles(Socail) Club Mentor
-                                    </h3>
-                                    <h4 class="mt-2">Indian Institute Of Information Technology Kottayam </h4>
-                                </div>
+                        <br />
+                        <h5>Database Management System</h5>
+                        <div class="progress">
+                            <div class="progress-bar  " role="progressbar" style="width: 75%; border-radius: 8px"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                75%
                             </div>
                         </div>
-                        <div class="container mt-4" data-aos="fade-left">
-                            <div class="row">
-                                <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
-                                <div class="col-md-11">
-                                    <h6 class="violet mt-3" style="font-weight:bold">2021</h6>
-                                    <h3 class="mt-1" style="font-weight:bold">
-                                        Data Analysis with Python: Zero to Pandas
-                                    </h3>
-                                    <h4 class="mt-2">Jovian ML</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container mt-4" data-aos="fade-left">
-                            <div class="row">
-                                <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
-                                <div class="col-md-11">
-                                    <h6 class="violet mt-3" style="font-weight:bold">2021</h6>
-                                    <h3 class="mt-1" style="font-weight:bold">
-                                        Code Kaze'21 Round 1 qualification
-                                    </h3>
-                                    <h4 class="mt-2">Coding Ninjas</h4>
-                                    <h5>Rank-5941</h5>
-                                </div>
+                        <br />
+                        <h5>C language and Data structures</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 70%; border-radius: 8px"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                70%
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+
+            <div class="col-md-9 mt-4 resume-blocks" id="experience">
+                <div class="conainer">
+                    <div class="row">
+                        <h2 class="violet" style="font-weight:bold"><u>Experience</u></h2>
+                    </div>
+                </div>
+
+                <div class="container" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
+                        <div class="col-md-11">
+                            <h6 class="violet mt-3" style="font-weight:bold">May-August
+                                2019<span>(Present)</span></h6>
+                            <h3 class="mt-1" style="font-weight:bold">
+                                Web Development Intern
+                            </h3>
+                            <h4 class="mt-2">ABC Infomedia Private Limited</h4>
+                            <h5 class="mt-2">Developed dynamic web applications using LAMP stack</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container mt-5" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
+                        <div class="col-md-11">
+                            <h6 class="violet mt-3" style="font-weight:bold">February-March 2019</h6>
+                            <h3 class="mt-1" style="font-weight:bold">
+                                Web Development Intern
+                            </h3>
+                            <h4 class="mt-2">The Sparks Foundation</h4>
+                            <h5 class="mt-2">Developed a basic banking application using LAMP stack</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-9 mt-4 resume-blocks" id="extras">
+                <div class="conainer">
+                    <div class="row">
+                        <h2 class="violet" style="font-weight:bold"><u>Extras</u></h2>
+                    </div>
+                </div>
+                <div class="container" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
+                        <div class="col-md-11">
+                            <h6 class="violet mt-3" style="font-weight:bold">2021-Present</h6>
+                            <h3 class="mt-1" style="font-weight:bold">
+                                Trendles(Socail) Club Mentor
+                            </h3>
+                            <h4 class="mt-2">Indian Institute Of Information Technology Kottayam </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
+                        <div class="col-md-11">
+                            <h6 class="violet mt-3" style="font-weight:bold">2021</h6>
+                            <h3 class="mt-1" style="font-weight:bold">
+                                Data Analysis with Python: Zero to Pandas
+                            </h3>
+                            <h4 class="mt-2">Jovian ML</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4" data-aos="fade-left">
+                    <div class="row">
+                        <div class="col-md-1 mt-5"><i class="fa fa-arrow-right"></i></div>
+                        <div class="col-md-11">
+                            <h6 class="violet mt-3" style="font-weight:bold">2021</h6>
+                            <h3 class="mt-1" style="font-weight:bold">
+                                Code Kaze'21 Round 1 qualification
+                            </h3>
+                            <h4 class="mt-2">Coding Ninjas</h4>
+                            <h5>Rank-5941</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <div class="container mt-5" id="services">
@@ -504,11 +494,11 @@
 
 
         <div class="row mt-4">
-            <div class="col-md-4 test">
+            <div class="col-md-4 mt-4 test">
                 <div>
                     <h2>PaisaTips</h2>
-                    <h6>This is a static web site which is used to provide financial advices using LAMP stack and other
-                        frameworks as part of my internship</h6>
+                    <h6>This is a static web site which is used to provide financial advices as part of my internship
+                    </h6>
                 </div>
                 <div class="overlay">
                     <div class="text">
@@ -541,9 +531,9 @@
 
     <div class="container mt-5" id="contact">
         <h1 class="display-4 text-center underline" data-aos="fade-up" style="font-weight:bold">Contact Me</h1>
-        <div class="container">
+        <div class="container mt-5">
             <div class="row mt-5">
-                <div class="col-md-6 mb-4">
+                <div class="col-md-6 mb-4 mt-5">
                     <h3>CONNECT WITH ME</h3>
                     <p>
                         Phone:+91-9347619384
@@ -561,7 +551,7 @@
 
                 </div>
                 <div class="col-md-6 mt-5 contact">
-                    <h2 class="mt-5">DROP A MESSAGE</h2>
+                    <h2>DROP A MESSAGE</h2>
                     <form action="mail.php" method="POST" autocomplete="off">
                         <input type="text" class="form-control mt-3" placeholder="YOUR NAME" name="name">
                         <input type="email" class="form-control mt-4" placeholder="YOUR EMAIL" name="email">

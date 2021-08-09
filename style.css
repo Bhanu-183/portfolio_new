@@ -127,6 +127,7 @@ a
     color:var(--violet);
     display:block;
     margin-left: 25px;
+    transition:all 0.5s;
 }
 
 .activated a::after
@@ -280,6 +281,10 @@ a
 }
 
 @media only screen and (max-width:768px) {
+     .navbar-nav
+{
+    margin-left: 0rem;
+}  
     .navbar-collapse
     {
         text-align: center;
@@ -299,4 +304,9 @@ a
     {
         margin-left:40%;
     }
+}
+
+.resume-blocks
+{
+    display:none;
 }
